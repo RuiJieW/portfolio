@@ -1,0 +1,432 @@
+@import 'https://fonts.googleapis.com/css?family=Lato|Roboto|Share+Tech+Mono';
+body {
+    font-family: '', sans-serif;
+    font-family: 'Lato', sans-serif;
+    background-color: #F8FAFB;
+    color: #000;
+    overflow-x:hidden;
+}
+
+h1,
+h2,
+h3 {
+    font-family: 'Lato', sans-serif;
+    font-weight: 900;
+}
+
+a:link,
+a:hover,
+a:active,
+a:visited {
+    text-decoration: none;
+}
+
+ul {
+    padding: 0;
+    list-style-type: none;
+}
+
+hr {
+    border-top: dashed 2px #eee;
+}
+
+img {
+    border-radius: 5px;
+    margin-bottom: 25px;
+}
+
+.white {
+    color: #fff;
+}
+
+.black {
+    color: #000;
+}
+
+.bold {
+    font-weight: 900;
+}
+
+.centre {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.highlight-w {
+    background: transparent;
+    border: 2px solid #fff;
+    padding: 10px;
+    letter-spacing: 1px;
+    color: #fff;
+}
+
+.highlight-w:hover {
+    background-color: #fff;
+    color: #000;
+    -webkit-transition: color 0.2s;
+}
+
+.highlight2 {
+    text-align: center;
+    display: inline-block;
+    min-width: 42px;
+    background: transparent;
+    border: 2px solid #000;
+    padding: 10px;
+    letter-spacing: 1px;
+    color: #000;
+    margin-top: -5px;
+}
+
+.highlight2:hover {
+    background-color: #000;
+    color: #fff;
+    -webkit-transition: color 0.2s;
+}
+
+.link {
+    text-decoration: none;
+    font-size: 0.5em;
+    color: #fff;
+    margin-top: 65px;
+}
+
+.tag {
+    background: #000;
+    border-radius: 5px;
+    color: #fff;
+    display: inline-block;
+    height: 26px;
+    line-height: 26px;
+    padding: 0 10px 0 10px;
+    position: relative;
+    -webkit-transition: color 0.2s;
+    margin-bottom: 20px;
+}
+
+.tag:hover {
+    color: #fff;
+    background: #ccc;
+}
+
+.thumb {
+    position: relative;
+    margin-bottom: 5%;
+    min-width: 240px;
+}
+
+.type {
+    color: #ccc;
+}
+
+
+/*navigation*/
+
+
+/* what's displayed on small screens */
+
+@media screen and (min-width: 0px) and (max-width: 940px) {
+    .nav,
+    .sm-visibility {
+        display: none;
+    }
+    .responsive-btn {
+        width: 100%;
+        display: block;
+    }
+}
+
+
+/* what's displayed elsewhere*/
+
+@media screen and (min-width: 941px) {
+    .nav {
+        position: fixed;
+        display: block;
+        top: 40%;
+        width: 100px;
+        height: 100%;
+        padding: 10px;
+    }
+    .sm-visibility {
+        position: relative;
+        display: block;
+        width: 100%;
+    }
+    .responsive-btn {
+        display: none;
+    }
+}
+
+.tooltip {
+    font-family: Lato;
+    position: relative;
+    display: inline-block;
+    z-index: 1000;
+    width: 90px;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 3px;
+    position: absolute;
+    z-index: 1;
+    top: -5px;
+    left: 110%;
+}
+
+
+/*Sections*/
+
+#splash {
+    display: block;
+    position: relative;
+    height: 300px;
+    margin-bottom: 50px;
+}
+
+#splash a {
+    color: #000;
+}
+
+.home {
+    -webkit-animation: colorchange 20s infinite alternate;
+    animation: colorchange 20s infinite alternate;
+}
+
+.qss {
+    background-color: #1B2A41;
+}
+
+.miaj {
+    background-color: #FDE722;
+}
+
+.rypple {
+    background-color: #4FB5AD;
+    /*
+     background:url('../imgs/rypple-ideation-1.jpg') no-repeat center center fixed;
+     -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;*/
+}
+
+.designership {
+    background-color: #F9A859;
+}
+
+.coca {
+    background-color: #000;
+}
+
+.description {
+    margin-bottom: 20px;
+}
+
+.footer {
+    margin-bottom: 20px;
+    height: 75px;
+    overflow: hidden;
+}
+
+.contact ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+.contact-w ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+.contact li {
+    float: left;
+}
+
+.contact-w li {
+    float: left;
+}
+
+.contact li a {
+    display: block;
+    margin-top: 5px;
+    color: #000;
+    text-align: center;
+    padding: 10px;
+    text-decoration: none;
+}
+
+.contact-w li a {
+    display: block;
+    margin-top: 5px;
+    color: #fff !important;
+    text-align: center;
+    padding: 10px;
+    text-decoration: none;
+}
+
+.contact li a:hover {
+    background-color: #000;
+    color: #fff !important;
+}
+
+.contact-w li a:hover {
+    background-color: #fff;
+    color: #000 !important;
+}
+
+
+/*custom responsive behaviour*/
+
+.video-container {
+    position: relative;
+    padding-bottom: 66.25% !important;
+    padding-top: 30px;
+    height: 0;
+    overflow: hidden;
+}
+
+body .video-container iframe,
+body .video-container object,
+body .video-container embed {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%
+}
+
+body a::after {
+    margin-top: -7px;
+}
+
+
+/****/
+
+.center {
+    margin: 0 auto
+}
+
+.awesome {
+    font-family: futura;
+    font-style: italic;
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+    color: #313131;
+    font-size: 45px;
+    font-weight: bold;
+    position: absolute;
+    -webkit-animation: colorchange 20s infinite alternate;
+}
+
+@-webkit-keyframes colorchange {
+    0% {
+        background-color: #B0ACC3;
+        /*blue*/
+    }
+    10% {
+        background-color: #FDE722;
+        /*#8e44ad;*/
+    }
+    20% {
+        background-color: #4FB5AD;
+        /* #1abc9c;*/
+    }
+    30% {
+        background-color: #F9A859;
+    }
+    40% {
+        background-color: #B0ACC3;
+        /*blue*/
+    }
+    50% {
+        background-color: #1B2A41;
+    }
+    60% {
+        background-color: #B0ACC3;
+        /*blue*/
+    }
+    70% {
+        background-color: #4FB5AD;
+        /**/
+    }
+    80% {
+        background-color: #f1c40f;
+    }
+    90% {
+        background-color: #4FB5AD;
+        /* #2980b9;*/
+    }
+    100% {
+        background-color: #1B2A41;
+    }
+}
+
+@keyframes colorchange {
+    0% {
+        background-color: #B0ACC3;
+        /*blue*/
+    }
+    10% {
+        background-color: #FDE722;
+        /*#8e44ad;*/
+    }
+    20% {
+        background-color: #4FB5AD;
+        /* #1abc9c;*/
+    }
+    30% {
+        background-color: #1B2A41;
+    }
+    40% {
+        background-color: #B0ACC3;
+        /*blue*/
+    }
+    50% {
+        background-color: #d5e29a;
+    }
+    60% {
+        background-color: #B0ACC3;
+        /*blue*/
+    }
+    70% {
+        background-color: #4FB5AD;
+        /**/
+    }
+    80% {
+        background-color: #f1c40f;
+    }
+    90% {
+        background-color: #4FB5AD;
+        /* #2980b9;*/
+    }
+    100% {
+        background-color: #1B2A41;
+    }
+}
+
+
+/*responsive embedded container*/
+
+.embed-container {
+    position: relative;
+    padding-bottom: 56.25%;
+    height: 0;
+    overflow: hidden;
+    max-width: 100%;
+}
+
+.embed-container iframe,
+.embed-container object,
+.embed-container embed {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
